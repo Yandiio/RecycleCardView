@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/gradient_group_profile"
+    android:orientation="vertical"
     tools:context=".GroupFragment">
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Our Profile"
-        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:fontFamily="@font/mm"
-        android:textSize="30sp"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginBottom="9dp"/>
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/mm"
+        android:text="Our Profile"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_karen"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -34,7 +34,6 @@
         android:textColor="@android:color/white">
 
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -42,10 +41,10 @@
             <TextView
                 android:id="@+id/textNama1"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_toRightOf="@id/karen"
-                android:gravity="center"
                 android:fontFamily="@font/ml"
+                android:gravity="center"
                 android:text="@string/karen"
                 android:textSize="22sp" />
 
@@ -55,8 +54,8 @@
                 android:layout_height="100dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/yiyid" />
+                android:layout_marginTop="12dp"
+                android:src="@drawable/karen" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -65,7 +64,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/sayyid_cv"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -83,9 +82,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_toRightOf="@id/sayyid"
+                android:fontFamily="@font/ml"
                 android:gravity="center"
                 android:text="@string/yiyid"
-                android:fontFamily="@font/ml"
                 android:textSize="22sp" />
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -94,7 +93,7 @@
                 android:layout_height="100dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:src="@drawable/yiyid" />
 
         </RelativeLayout>
@@ -103,7 +102,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_yandi"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -119,11 +118,11 @@
             <TextView
                 android:id="@+id/textNama"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_toRightOf="@id/yandi"
+                android:fontFamily="@font/ml"
                 android:gravity="center"
                 android:text="@string/yandi"
-                android:fontFamily="@font/ml"
                 android:textSize="22sp" />
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -132,11 +131,10 @@
                 android:layout_height="100dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/yandi" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
 
 </LinearLayout>
