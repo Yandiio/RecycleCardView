@@ -7,7 +7,7 @@
     android:layout_marginTop="@dimen/activity_horizontal_margin"
     android:padding="@dimen/activity_horizontal_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_profile_yandi">
+    tools:showIn="@layout/activity_profile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_toEndOf="@id/ivContactItem1"
-                android:text="(123) 456-7890"
+                android:text="(+62) 822-1407-3848"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#212121" />
 
@@ -58,7 +58,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:background="@drawable/toggle_button"
-                android:checked="false"
+                android:checked="true"
                 android:padding="6dp"
                 android:textOff=""
                 android:textOn="" />
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_toEndOf="@id/ivContactItem2"
-                android:text="(321) 654-0987"
+                android:text="(+62) 654-0987"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#212121" />
 
@@ -221,7 +221,6 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:background="@drawable/toggle_button"
-                android:checked="false"
                 android:padding="6dp"
                 android:textOff=""
                 android:textOn="" />
@@ -333,7 +332,6 @@
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:background="@drawable/toggle_button"
                 android:padding="6dp"
-                android:checked="false"
                 android:textOff=""
                 android:textOn="" />
 
@@ -364,6 +362,7 @@
                 android:layout_width="wrap_content"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
                 android:text="Send Gmail" />
 
             <Button
@@ -372,6 +371,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/colorPrimary"
                 android:text="Call" />
 
             <Button
@@ -380,6 +380,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/colorPrimary"
                 android:text="Portfolio" />
 
             <Button
@@ -388,6 +389,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/colorPrimary"
                 android:text="facebook" />
 
         </LinearLayout>
