@@ -5,44 +5,138 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradient_group_profile"
     tools:context=".GroupFragment">
 
-    <Button
-        android:id="@+id/karen"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_title"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:text="Our Profile"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:fontFamily="@font/mm"
+        android:textSize="30sp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="9dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_karen"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:background="@color/colorPrimary"
         android:text="Karenina"
-        android:textColor="@android:color/white"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_gravity="center_horizontal" />
+        android:textColor="@android:color/white">
 
-    <Button
-        android:id="@+id/yandi"
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textNama1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@id/karen"
+                android:gravity="center"
+                android:fontFamily="@font/ml"
+                android:text="@string/karen"
+                android:textSize="22sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karen"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/yiyid" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sayyid_cv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="20dp"
-        android:text="Yandi"
-        android:textColor="@android:color/white"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_gravity="center_horizontal" />
+        android:background="@color/colorPrimary"
+        android:text="Karenina"
+        android:textColor="@android:color/white">
 
-    <Button
-        android:id="@+id/sayyid"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textNama2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@id/sayyid"
+                android:gravity="center"
+                android:text="@string/yiyid"
+                android:fontFamily="@font/ml"
+                android:textSize="22sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sayyid"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/yiyid" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_yandi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="20dp"
-        android:text="Sayyid"
-        android:textColor="@android:color/white"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_gravity="center_horizontal" />
+        android:background="@color/colorPrimary"
+        android:text="Karenina"
+        android:textColor="@android:color/white">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textNama"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@id/yandi"
+                android:gravity="center"
+                android:text="@string/yandi"
+                android:fontFamily="@font/ml"
+                android:textSize="22sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/yandi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/yandi" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </LinearLayout>
